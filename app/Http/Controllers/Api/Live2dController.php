@@ -72,7 +72,7 @@ class Live2dController extends BaseController
             }
         }
 
-        return $this->response->json(['data'=>$return]);
+        return $this->response->json($return);
     }
 
     /**
@@ -133,7 +133,7 @@ class Live2dController extends BaseController
             $json['expressions'] = $expressions;
         }
 
-        return $this->response->json(['data'=>$json]);
+        return $this->response->json($json);
     }
 
     /**
@@ -155,13 +155,13 @@ class Live2dController extends BaseController
             $modelRandNewId = $modelRandId == $id ? true : false;
         }
 
-        $return = array('model' => array(
+        $data = array('model' => array(
             'id' => $modelRandId,
             'name' => $modelList['models'][$modelRandId - 1],
             'message' => $modelList['messages'][$modelRandId - 1],
         ));
 
-        return $this->response->json(['data' => $return]);
+        return $this->response->json($data);
     }
 
     /**
@@ -180,13 +180,13 @@ class Live2dController extends BaseController
 
         if (!isset($modelList['models'][$modelSwitchId-1])) $modelSwitchId = 1;
 
-        $return = array('model' => array(
+        $data = array('model' => array(
             'id' => $modelSwitchId,
             'name' => $modelList['models'][$modelSwitchId-1],
             'message' => $modelList['messages'][$modelSwitchId-1]
         ));
 
-        return $this->response->json(['data' => $return]);
+        return $this->response->json($data);
     }
 
     /**
@@ -224,7 +224,7 @@ class Live2dController extends BaseController
             'model' => is_array($modelName) ? $modelName[$modelTexturesNewId-1] : $modelName
         ));
 
-        return $this->response->json(['data' => $data]);
+        return $this->response->json($data);
     }
 
     /**
@@ -253,6 +253,6 @@ class Live2dController extends BaseController
             'model' => is_array($modelName) ? $modelName[$modelTexturesNewId-1] : $modelName
         ));
 
-        return $this->response->json(['data' => $data]);
+        return $this->response->json($data);
     }
 }
