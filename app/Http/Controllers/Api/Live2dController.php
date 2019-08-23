@@ -10,7 +10,6 @@ namespace App\Http\Controllers\Api;
 
 
 use App\Repositories\Live2dRepository;
-use Laravel\Lumen\Http\Request;
 
 class Live2dController extends BaseController
 {
