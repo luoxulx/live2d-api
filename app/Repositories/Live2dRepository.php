@@ -17,7 +17,7 @@ class Live2dRepository
 
     public function __construct()
     {
-        $this->modelPath = storage_path('public/model/');
+        $this->modelPath = storage_path('app/public/model/');
         /* 获取模型列表 */
         $this->setModelList();
     }
