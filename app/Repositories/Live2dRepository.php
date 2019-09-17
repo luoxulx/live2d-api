@@ -17,8 +17,8 @@ class Live2dRepository
 
     public function __construct()
     {
-        // $this->modelPath = 'https://net.lnmpa.top/l2d/model/';暂时不能放到 CDN
-        $this->modelPath = env('APP_URL') . '/model/';
+        $this->modelPath = 'https://net.lnmpa.top/l2d/model/';//暂时不能放到 CDN
+        //$this->modelPath = env('APP_URL') . '/model/';
         /* 获取模型列表 */
         $this->setModelList();
     }
