@@ -76,7 +76,7 @@ class Live2dController extends BaseController
 
     /**
      * 获取 分组 1 的 第 23 号 皮肤
-     * /get/?id=1-23
+     * /get/?id=1-23;;;获取的链接会多一个host地址
      */
     public function getSkin(): \Illuminate\Http\JsonResponse
     {
