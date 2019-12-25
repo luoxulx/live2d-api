@@ -10,7 +10,7 @@ namespace App\Http\Controllers\Api;
 
 
 use App\Repositories\Live2dRepository;
-
+// bug待修复
 class Live2dController extends BaseController
 {
 
