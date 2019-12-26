@@ -148,7 +148,7 @@ class Live2dController extends BaseController
 
         $modelList = $this->live2d->getModelList();
 
-        $modelRandNewId = true;
+        $modelRandNewId = true;#todo
         while ($modelRandNewId) {
             $modelRandId = random_int(0, count($modelList['models']) - 1) + 1;
             $modelRandNewId = $modelRandId == $id ? true : false;
