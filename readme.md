@@ -1,4 +1,4 @@
-ceshi，多了个host
+ceshi，多了个host,不能使用
 # Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
